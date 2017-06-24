@@ -8,7 +8,6 @@ import (
 )
 
 func extractTokenNames(input []byte, regex string) [][]byte {
-	// namesRegex := prefix + "([^System].*?)([^Microsoft].*?)([^Mindbody].*?)" + suffix
 	namesRegex := regex
 	rex := regexp.MustCompile(namesRegex)
 	return rex.FindAll(input, -1)
