@@ -69,15 +69,15 @@ func main() {
 		outputToFile(*args.outputPath, output)
 
 		// send tokenized config to file
-		outputToFile(*args.tokenizedoutputPath, []byte(tokenize(input, tokenValueMap)))
+		outputToFile(*args.tokenizedoutputPath, []byte(tokenize(input, []string{*args.bufferCharsLeft, *args.bufferCharsRight}, tokenValueMap)))
 	}
 }
 
-func tokenize(input []byte, tokenMap map[string]string) string {
+func tokenize(input []byte, buffers []string, tokenMap map[string]string) string {
 	inputS := string(input)
 	for k, v := range tokenMap {
 		if v != "false" && v != "true" {
-			inputS = strings.Replace(inputS, "\""+v+"\"", "__"+k+"__", 1)
+			inputS = strings.Replace(inputS, "\""+v+"\"", buffers[0]+k+buffers[1], 1)
 		}
 	}
 	return inputS

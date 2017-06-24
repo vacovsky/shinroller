@@ -39,7 +39,11 @@ for f in inputs/* ; do
     --value-names="hostAddress,connectionString,value" \
 
     # skips over <add key="something" value="Microsoft.Something.etc">
-    --exclude="Microsoft.,System."
+    --exclude="Microsoft.,System." \
+
+    # chars to use as buffers around the tokens
+    --buffer-left="{{" \
+    --buffer-right="}}"
 done
 
 # this will converge and sort all token files, so that any files which

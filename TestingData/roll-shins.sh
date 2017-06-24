@@ -1,15 +1,17 @@
 #!/bin/bash
 
 for f in inputs/* ; do
-    shinroller \
+    ../shinroller \
     --input="$f" \
     --output-path="tokens/$(basename $f).json" \
     --tokenized-output-path="tokenized_files/$(basename $f)" \
     --key-names="name,key" \
     --value-names="hostAddress,connectionString,value" \
-    --exclude="Microsoft.,System."
+    --exclude="Microsoft.,System." \
+    --buffer-left="{{" \
+    --buffer-right="}}"
 done
 
-shinroller \
+../shinroller \
     --converge="tokens/" \
     --output-path="converged_tokens/"
