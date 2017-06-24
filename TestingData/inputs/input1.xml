@@ -1,0 +1,23 @@
+<add key="mykey1" value="a conventional key" />
+<add name="mykey2" 
+            connectionString="a key with a space and a newline"/>
+<add name="an-ip-address" hostAddress="0.0.0.0"/>
+<add key="mykey3" 
+
+
+
+
+
+
+
+value="blahblah" />
+<add name="an_int" 
+
+
+
+            connectionString="24" />
+<add name="System.Thing" value="System.Thing"/>
+<add key="mykey5" value="this is just another key" />
+<add name="mykey6" 
+            connectionString="whatever"/>
+<add name="someEndpoint" hostAddress="somehost.whatever.nope"/>

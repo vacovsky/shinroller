@@ -1,0 +1,25 @@
+<add key="mykey1" value=__mykey1__ />
+<add name="mykey2" 
+            connectionString=__mykey2__/>
+<add name="an-ip-address" hostAddress=__an-ip-address-from2__/>
+<add key="mykey3" 
+
+
+
+
+
+
+
+value=__mykey3__ />
+<add name="an-ip-address-from2" hostAddress=__an-ip-address__/>
+
+<add name="an_int" 
+
+
+
+            connectionString=__an_int__ />
+<add name="System.Thing" value="System.Thing"/>
+<add key="mykey5" value=__mykey5__ />
+<add name="mykey6" 
+            connectionString=__mykey6__/>
+<add name="someEndpoint" hostName="somehost.whatever.nope"/>
