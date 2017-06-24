@@ -1,1 +1,10 @@
-{"an-ip-address":"0.0.0.0:9000","an-ip-address-from2":"0.0.0.0:9000","an_int":"24","mykey1":"a conventional key","mykey2":"a key with a space and a newline","mykey3":"blahblah","mykey5":"this is just another key","mykey6":"whatever"}
+{
+    "an-ip-address": "0.0.0.0:9000",
+    "an-ip-address-from2": "0.0.0.0:9000",
+    "an_int": "24",
+    "mykey1": "a conventional key",
+    "mykey2": "a key with a space and a newline",
+    "mykey3": "blahblah",
+    "mykey5": "this is just another key",
+    "mykey6": "whatever"
+}
