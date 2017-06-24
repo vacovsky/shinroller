@@ -63,7 +63,7 @@ func main() {
 			}
 		}
 
-		output, _ = json.Marshal(tokenValueMap)
+		output, _ = json.MarshalIndent(tokenValueMap, "", "    ")
 
 		// send tokens to file
 		outputToFile(*args.outputPath, output)
