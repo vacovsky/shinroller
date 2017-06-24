@@ -65,8 +65,8 @@ TestingData
 │   ├── input1.xml.json
 │   └── input2.xml.json
 ├── inputs
-│   ├── input1.xml
-│   └── input2.xml
+│   ├── input1.xml    <---- the only original files
+│   └── input2.xml    <---- the only original files
 ├── roll-shins.sh
 ├── tokenized_files
 │   ├── input1.xml
