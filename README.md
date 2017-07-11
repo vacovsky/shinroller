@@ -9,7 +9,7 @@ This tools is intended to be used alongside https://github.com/vacoj/fasturtle. 
 ## Installation
 
 ```bash
-go get -u github.com/cvacoj/shinroller
+go get -u github.com/vacoj/shinroller
 go get -u github.com/vacoj/fasturtle # recommended partner app
 ```
 
